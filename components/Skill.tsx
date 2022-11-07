@@ -9,10 +9,16 @@ type Props={
     level:number
 }
 export default function Skill({directionLeft,image,level}:Props) {
+
+         let mobileViewport=true
+           if ((typeof window !== "undefined") && window.innerWidth > 500 ) {
+            mobileViewport=false
+           }
+      
   return (
     <motion.div  className='group relative flex cursor-pointer h-20 w-20 md:w-24 md:h-24  xl:w-28 xl:h-28  transition   rounded-full border border-gray-500 overflow-hidden justify-center items-center'
       initial={{
-         x: directionLeft ? -200: 200,
+         x: directionLeft ? (mobileViewport? -100:-200) : (mobileViewport? 100:200) , 
          opacity:0
       }}
       viewport={{once:true}}

@@ -23,7 +23,7 @@ export default function Hero() {
     delaySpeed:1000,
     })
   return (
-    <div className='relative h-screen max-h-[800px] flex flex-col space-y-8 items-center justify-start text-center overflow-hidden before:absolute before:left-0 before:top-0 before:h-full before:w-full  before:bg-black before:opacity-5' style={css}>
+    <div className='relative min-h-[600px] max-h-[800px] flex flex-col space-y-8 items-center justify-start text-center overflow-hidden before:absolute before:left-0 before:top-0 before:h-full before:w-full  before:bg-black before:opacity-5' style={css}>
 
         <div className=' h-48 w-48 mx-auto ' >
             <Player

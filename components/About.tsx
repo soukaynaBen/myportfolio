@@ -25,7 +25,7 @@ export default function About() {
 
 
   return (
-    <div className='h-screen max-h-[800px]   text-center  md:text-left  max-w-7xl px-10 mx-auto  '>
+    <div className='min-h-[600px] max-h-[800px]   text-center  md:text-left  max-w-7xl px-10 mx-auto  '>
         <h3 className='pt-16 pb-12  sm:pt-24 sm:pb-0 uppercase tracking-[20px] text-gray-500 text-2xl text-center'>About</h3>
         <div className=' flex  md:pt-24 flex-col md:flex-row justify-evenly items-center overflow-hidden'>
 

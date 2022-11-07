@@ -25,13 +25,13 @@ export default function Projects() {
       }]
   return (
     <div
-    className='h-screen max-h-[800px] relative flex overflow-hidden flex-col text-left md:flex-row
+    className=' py-14  flex overflow-hidden flex-col text-left 
     max-w-full justify-evenly mx-auto z-0 text-white'>
-    <h3 className='md:absolute relative   top-24 uppercase tracking-[20px] text-gray-500 text-2xl text-center '>Projects</h3>
-        <div className=' relative w-full flex  overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80 scrollbar-track-gray-400/20 '>  
+    <h3 className='py-14 relative    uppercase tracking-[20px] text-gray-500 text-2xl text-center '>Projects</h3>
+        <div className=' relative w-full flex  overflow-scroll overflow-y-hidden snap-x min-h-[500px] snap-mandatory z-20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80 scrollbar-track-gray-400/20 '>  
           {Projects.map((project,i)=>(
             
-            <div key={i} className=' w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-8 sm:p-32 md:p-44 pb-0 sm:pb-0  md:pb-0 h-screen max-h-[800px] '>
+            <div key={i} className=' w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-8 max-h-[800px] '>
               <a  target="_blank" href={`${project.href}`} rel="noreferrer">
               <motion.img 
               initial={ {y:-100,opacity:0}}
