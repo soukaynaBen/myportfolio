@@ -31,15 +31,14 @@ export default function Projects() {
         <div className=' relative w-full flex  overflow-scroll overflow-y-hidden snap-x min-h-[500px] snap-mandatory z-20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80 scrollbar-track-gray-400/20 '>  
           {Projects.map((project,i)=>(
             
-            <div key={i} className=' w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-8 max-h-[800px] '>
               <a  target="_blank" href={`${project.href}`} rel="noreferrer">
+            <div key={i} className=' w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-8 max-h-[800px] '>
               <motion.img 
               initial={ {y:-100,opacity:0}}
               transition={{duration:1.2}}
               whileInView={{opacity:1,y:0}}
               viewport={{once:true}}
               src={`${project.src}.png`} className='h-44 w-64 object-contain cursor-pointer' alt="" />
-              </a>
                  <div className='space-y-4 md:space-y-10 px-0 md:px-10 max-w-6xl '>
                   <h4 className='underline decoration-[#F7AB0A]/50 text-center'> Case Study {i+1} of {Projects.length} : {`${project.title}`} </h4>
                   <p className='text-lg text-center'>
@@ -47,6 +46,7 @@ export default function Projects() {
                   </p>
                 </div>
             </div>
+              </a>
           ))}
         </div>
    <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12  '>

@@ -18,7 +18,7 @@ export default function Hero() {
     words: ['My name is Ben Lahbib Soukayna', 'I\'m a developer', 'I love web developement', 'And this is my Portfolio!'],
     loop: true,
     onLoopDone: () => console.log(`loop completed after 3 runs.`),
-    typeSpeed:70,
+    typeSpeed:90,
     deleteSpeed:50,
     delaySpeed:1000,
     })
@@ -33,7 +33,7 @@ export default function Hero() {
             autoplay
           />
         </div>
-        <div className='z-20 '>
+        <div className='z-20  '>
           <h2 className='text-center text-lg drop-shadow-lg shadow-white uppercase text-white/80 pb-2 tracking-[12px]'>
             Web developer
           </h2>
