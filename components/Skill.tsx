@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import { type } from 'os';
+import Image from 'next/image';
 
 type Props={
     directionLeft?:boolean;
@@ -19,10 +20,10 @@ export default function Skill({directionLeft,image,level}:Props) {
 
       whileInView={{opacity:1,x:0}}
     >
-        <img 
+        <Image
          src={`/${image}.png`}
-         alt={`${image}`}
-         className='w-[75%] h-[75%]  object-contain filter group-hover:grayscale'
+         alt={`${image}`} width={"75%"} height={"75%"}
+         className=' object-contain filter group-hover:grayscale'
         />
         <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white left-0 top-0 h-full w-full rounded-full z-0'>
             <div className='flex items-center justify-center h-full '>

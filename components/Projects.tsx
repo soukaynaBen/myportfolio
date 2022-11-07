@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Projects() {
     const Projects=[
@@ -31,8 +32,8 @@ export default function Projects() {
           {Projects.map((project,i)=>(
             
             <div key={i} className=' w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-8 sm:p-32 md:p-44 pb-0 sm:pb-0  md:pb-0 h-screen max-h-[800px] '>
-              <a  target="_blank" href={`${project.href}`}>
-              <motion.img  
+              <a  target="_blank" href={`${project.href}`} rel="noreferrer">
+              <motion.img 
               initial={ {y:-100,opacity:0}}
               transition={{duration:1.2}}
               whileInView={{opacity:1,y:0}}

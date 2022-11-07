@@ -7,39 +7,34 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
-import WorkExperience from '../components/WorkExperience'
-import {  motion } from "framer-motion";
+
  const Home:NextPage= ()=> {
   return (
-    <div className='max-w-[2000px] mx-auto font-nunito bg-[rgba(36,36,36)] text-white  snap-proximity snap-y  overflow-x-hidden z-0  scroll-smooth'>
+    <div className="max-w-[2000px] mx-auto font-nunito bg-[rgba(36,36,36)] text-white  snap-proximity snap-y  overflow-x-hidden z-0  scroll-smooth">
       <Head>
-        <title>Soukayna's Portfolio</title>
+        <title>Soukayna&apos;s Portfolio</title>
       </Head>
       <Header/> 
       {/* Hero */}
-      <section id='hero' >
+      <section id="hero" >
         <Hero/>
       </section>
       {/* About */}
-      <section id='about'  >
+      <section id="about" >
         <About/>
       </section>
 
-      {/* Experience */}
-      {/* <section id='experience' >
-        <WorkExperience/>
-       </section> */}
       {/* Skills */}
-      <section id='skills'  >
+      <section id="skills" >
          <Skills/>
       </section>
       {/* Projects */}
-      <section id='projects'  >
+      <section id="projects"  >
         <Projects/>
       </section>
       {/* Contact Me */}
 
-      <section id='contact'  >
+      <section id="contact"  >
         <ContactMe/>
       </section>
      

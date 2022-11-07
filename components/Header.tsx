@@ -33,13 +33,13 @@ export default function Header({}: Props) {
             target="_blank"
             url='https://github.com/soukaynaBen' 
             fgColor='gray' 
-            bgColor='transparent'/>
+            bgColor='transparent'  rel="noreferrer"/>
 
             <SocialIcon 
             target="_blank" 
             url='https://www.linkedin.com/in/souka-ben-843262123' 
             fgColor='gray' 
-            bgColor='transparent'/>
+            bgColor='transparent' rel="noreferrer"/>
         </motion.div>
           <Link href="#contact">
         <motion.div 
