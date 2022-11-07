@@ -10,7 +10,7 @@ const css={
     backgroundPosition:"center" ,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    backgroundImage: " url('/height.png') " ,
+    backgroundImage: " url('/heroImage.png') " ,
 
 }
 export default function Hero() {
