@@ -23,7 +23,7 @@ export default function Hero() {
     delaySpeed:1000,
     })
   return (
-    <div className='relative min-h-[600px] max-h-[800px] flex flex-col space-y-8 items-center justify-start text-center overflow-hidden before:absolute before:left-0 before:top-0 before:h-full before:w-full  before:bg-black before:opacity-5' style={css}>
+    <div className='relative min-h-[600px] sm:min-h-[700px]  max-h-[800px] flex flex-col space-y-8 items-center justify-start text-center overflow-hidden before:absolute before:left-0 before:top-0 before:h-full before:w-full  before:bg-black before:opacity-5 max-w-[1700px] mx-auto' style={css}>
 
         <div className=' h-48 w-48 mx-auto ' >
             <Player
@@ -33,11 +33,11 @@ export default function Hero() {
             autoplay
           />
         </div>
-        <div className='z-20  '>
+        <div className='z-20  flex flex-col'>
           <h2 className='text-center text-lg drop-shadow-lg shadow-white uppercase text-white/80 pb-2 tracking-[12px]'>
             Web developer
           </h2>
-          <h1 className='text-5xl lg:text-6xl font-semibold px-10 '>
+          <h1 className='text-5xl lg:text-6xl font-semibold px-10  h-48 pt-4 '>
             <span className='mr-3'>{text}</span>
             <Cursor cursorColor='#F7AB0A' />    
           </h1>
