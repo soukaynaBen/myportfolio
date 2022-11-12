@@ -14,7 +14,7 @@ export default function Projects() {
         
         src:"hulu",
         title:"Hulu clone",
-        body:"A Responsive web application created with NextJs, TailwindCss. The informations about movies provided by tmdb api .The app is Hosted in Netlify. ",
+        body:"A Responsive web application created with NextJs, TailwindCss. All movies' data were provided by tmdb api .The app is Hosted in Netlify. ",
         href:"https://hulu101.netlify.app/"
       },{
         src:"slimestone",
