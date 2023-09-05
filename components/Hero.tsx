@@ -15,7 +15,7 @@ const css={
 }
 export default function Hero() {
     const [text,count]=useTypewriter({
-    words: ['My name is Ben Lahbib Soukayna', 'I\'m a developer', 'I love web developement', 'And this is my Portfolio!'],
+    words: ['My name is Ben Lahbib Soukayna', 'I\'m a developer', 'I love web development', 'And this is my Portfolio!'],
     loop: true,
     onLoopDone: () => console.log(`loop completed after 3 runs.`),
     typeSpeed:90,
